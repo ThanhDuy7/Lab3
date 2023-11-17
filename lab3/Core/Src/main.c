@@ -18,7 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+#include "input_processing.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -201,22 +201,22 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, PIN0_Pin|PIN1_Pin|PIN2_Pin|PIN3_Pin
-                          |PIN4_Pin|PIN5_Pin|PIN6_Pin|PIN7_Pin, GPIO_PIN_RESET);
+                          |PIN4_Pin|PIN5_Pin|PIN6_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : PIN0_Pin PIN1_Pin PIN2_Pin PIN3_Pin
-                           PIN4_Pin PIN5_Pin PIN6_Pin PIN7_Pin */
+                           PIN4_Pin PIN5_Pin PIN6_Pin */
   GPIO_InitStruct.Pin = PIN0_Pin|PIN1_Pin|PIN2_Pin|PIN3_Pin
-                          |PIN4_Pin|PIN5_Pin|PIN6_Pin|PIN7_Pin;
+                          |PIN4_Pin|PIN5_Pin|PIN6_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : BTN1_Pin */
-  GPIO_InitStruct.Pin = BTN1_Pin;
+  /*Configure GPIO pins : BTN1_Pin BTN2_Pin BTN3_Pin */
+  GPIO_InitStruct.Pin = BTN1_Pin|BTN2_Pin|BTN3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(BTN1_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

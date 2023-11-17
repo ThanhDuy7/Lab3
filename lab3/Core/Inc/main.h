@@ -57,24 +57,26 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define PIN0_Pin GPIO_PIN_0
+#define PIN0_Pin GPIO_PIN_5
 #define PIN0_GPIO_Port GPIOA
-#define PIN1_Pin GPIO_PIN_1
+#define PIN1_Pin GPIO_PIN_6
 #define PIN1_GPIO_Port GPIOA
-#define PIN2_Pin GPIO_PIN_2
+#define PIN2_Pin GPIO_PIN_7
 #define PIN2_GPIO_Port GPIOA
-#define PIN3_Pin GPIO_PIN_3
-#define PIN3_GPIO_Port GPIOA
-#define PIN4_Pin GPIO_PIN_4
-#define PIN4_GPIO_Port GPIOA
-#define PIN5_Pin GPIO_PIN_5
-#define PIN5_GPIO_Port GPIOA
-#define PIN6_Pin GPIO_PIN_6
-#define PIN6_GPIO_Port GPIOA
-#define PIN7_Pin GPIO_PIN_7
-#define PIN7_GPIO_Port GPIOA
 #define BTN1_Pin GPIO_PIN_0
 #define BTN1_GPIO_Port GPIOB
+#define BTN2_Pin GPIO_PIN_1
+#define BTN2_GPIO_Port GPIOB
+#define BTN3_Pin GPIO_PIN_2
+#define BTN3_GPIO_Port GPIOB
+#define PIN3_Pin GPIO_PIN_8
+#define PIN3_GPIO_Port GPIOA
+#define PIN4_Pin GPIO_PIN_9
+#define PIN4_GPIO_Port GPIOA
+#define PIN5_Pin GPIO_PIN_10
+#define PIN5_GPIO_Port GPIOA
+#define PIN6_Pin GPIO_PIN_11
+#define PIN6_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 
