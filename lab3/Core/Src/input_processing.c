@@ -15,6 +15,7 @@ void fsm_for_input_processing(void){
 	case BUTTON_RELEASED:
 		if(is_button_pressed(0)){
 			buttonState = BUTTON_PRESSED;
+			HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 			//INCREASE VALUE OF PORT A BY ONE UNIT
 		}
 		break;
